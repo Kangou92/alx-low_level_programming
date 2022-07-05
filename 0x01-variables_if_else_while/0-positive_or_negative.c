@@ -15,17 +15,17 @@ n = rand() - RAND_MAX / 2;
 /* your code goes there */
 if (n > 0)
 {
-	printf("\nThe number is positive %d", n);
+	printf(n ,"\n is positive %d");
 }
 else
 {
 	if (n == 0)
 	{
-		printf("\n The number is zero %d", n);
+		printf(n , "\n The number is zero %d");
 	}
 	else
 	{
-		printf("\nThe number is negative %d", n);
+		printf(n , "\n is negative %d");
 	}
 }
 return (0);
