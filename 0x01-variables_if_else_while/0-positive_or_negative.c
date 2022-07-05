@@ -16,6 +16,7 @@ n = rand() - RAND_MAX / 2;
 if (n > 0)
 {
 	printf("%d", n);
+	printf(" ");
 	printf("est positive\n");
 }
 else
@@ -23,11 +24,13 @@ else
 	if (n == 0)
 	{
 		printf("%d", n);
+		printf(" ");
 		printf("est zero\n");
 	}
 	else
 	{
 		printf("%d", n);
+		printf(" ");
 		printf("est negative\n");
 	}
 }
