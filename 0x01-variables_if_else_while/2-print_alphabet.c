@@ -12,6 +12,6 @@ char a = 'a';
 	{
 	putchar(a);
 	}
-	putchar('\t');
+	putchar('\n');
 return (0);
 }
