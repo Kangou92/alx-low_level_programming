@@ -13,19 +13,19 @@ int i;
 i = n % 10;
 if (i > 5)
 {
-	printf("Last digit of" "" "%d", n "" "is" "" "%d", i ""	"and is greater than 5\n");
+	printf("\ Last digit of is and is greater than 5" "%d" "%d", n i);
 }
 else
 {
 	if (i == 0)
 	{
-		printf("Last digit of" "" "%d", n "is" "" "%d", i "and is 0\n");
+		printf("\n Last digit of is and is 0" "%d" "%d", n i);
 	}
 	else
 	{
-		if (i < 6 && i = !0)
+		if ((i < 6) && (i = !0))
 		{
-			printf("Last digit of" "" "%d", n "" "is" "" "%d", i "and is less than 6 and not 0\n");
+			printf("\n Last diggit is and is less than 6 and not 0" "%d" "%d", n i);
 		}
 	}
 }
