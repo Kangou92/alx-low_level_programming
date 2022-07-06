@@ -13,8 +13,7 @@ int i;
 i = n % 10;
 if (i > 5)
 {
-	printf("Last digit of" "" "%d" , n "" "is" "" "%d",i ""
-	"and is greater than 5\n");
+	printf("Last digit of" "" "%d", n "" "is" "" "%d", i ""	"and is greater than 5\n");
 }
 else
 {
@@ -26,7 +25,7 @@ else
 	{
 		if (i < 6 && i = !0)
 		{
-			printf("Last digit of" "" "%d" , n "" "is" "" "%d" , i "			and is less than 6 and not 0\n");
+			printf("Last digit of" "" "%d", n "" "is" "" "%d", i "and is less than 6 and not 0\n");
 		}
 	}
 }
