@@ -17,7 +17,7 @@ if (n > 0)
 {
 	printf("%d", n);
 	printf(" ");
-	printf("est positive\n");
+	printf("is positive\n");
 }
 else
 {
@@ -25,13 +25,13 @@ else
 	{
 		printf("%d", n);
 		printf(" ");
-		printf("est zero\n");
+		printf("is zero\n");
 	}
 	else
 	{
 		printf("%d", n);
 		printf(" ");
-		printf("est negative\n");
+		printf("is negative\n");
 	}
 }
 return (0);
