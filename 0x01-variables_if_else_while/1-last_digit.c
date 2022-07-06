@@ -39,7 +39,7 @@ else
 	}
 	else
 	{
-		if (i < 6 && i=!0)
+		if (i < 6 && i = !0)
 		{
 			printf("Last digit of");
 			printf("");
