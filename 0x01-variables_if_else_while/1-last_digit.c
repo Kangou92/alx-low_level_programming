@@ -13,43 +13,21 @@ int i;
 i = n % 10;
 if (i > 5)
 {
-	printf("Last digit of");
-	printf("");
-	printf("%d", n);
-	printf("");
-	printf("is");
-	printf("");
-	printf("%d", i);
-	printf("");
-	printf("and is greater than 5");
+	printf("Last digit of" "" "%d",n "is" "" "%d",i "");
+	printf("and is greater than 5\n");
 }
 else
 {
 	if (i == 0)
 	{
-		printf("Last digit of");
-		printf("");
-		printf("%d", n);
-		printf("");
-		printf("is");
-		printf("");
-		printf("%d", i);
-		printf("");
-		printf("and is 0");
+		printf("Last digit of" "" "%d", n "is" "" "%d", i "and is 0\n");
 	}
 	else
 	{
 		if (i < 6 && i = !0)
 		{
-			printf("Last digit of");
-			printf("");
-			printf("%d", n);
-			printf("");
-			printf("is");
-			printf("");
-			printf("%d", i);
-			printf("");
-			printf("and is less than 6 and is not 0");
+			printf("Last digit of" ""  "%d", n "" "is" "" "%d",i);
+			printf("" "and is less than 6 and not 0\n");
 		}
 	}
 }
