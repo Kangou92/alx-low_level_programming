@@ -11,5 +11,6 @@ char a = 'a';
 	putchar(a);
 	while (a > 'z')
 	putchar(a);
+	a++;
 return (0);
 }
