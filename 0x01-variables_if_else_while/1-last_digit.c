@@ -10,8 +10,8 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
 int i;
-i = n%10;
-if (i>5)
+i = n % 10;
+if (i > 5)
 {
 	printf("Last digit of");
 	printf("");
@@ -25,7 +25,7 @@ if (i>5)
 }
 else
 {
-	if (i==0)
+	if (i == 0)
 	{
 		printf("Last digit of");
 		printf("");
@@ -39,7 +39,7 @@ else
 	}
 	else
 	{
-		if (i<6 && i=! 0)
+		if (i < 6 && i=!0)
 		{
 			printf("Last digit of");
 			printf("");
