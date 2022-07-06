@@ -12,5 +12,6 @@ char a = 'a';
 	{
 	putchar(a);
 	}
+	putchar('\t');
 return (0);
 }
