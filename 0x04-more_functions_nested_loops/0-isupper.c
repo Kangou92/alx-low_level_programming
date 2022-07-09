@@ -8,6 +8,7 @@
 int main(void)
 {
 char c;
+_isupper(c);
 }
 /**
  * _isupper -entry point
