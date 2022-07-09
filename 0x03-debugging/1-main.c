@@ -8,9 +8,9 @@ int main(void)
 int i;
 printf("infinite loop incomming :(\n");
 i = 0
+	/*cause an infinite looop output*/
 while (i < 10)
 {
-	/*cause infinite loop*/
 	putchar(i);
 }
 	printf("Infinite loop avoided! \\o/\n");
