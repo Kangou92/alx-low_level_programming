@@ -19,7 +19,7 @@ _isupper(c);
 */
 int _isupper(int c)
 {
-if (isupper(c) == 1)
+if (isupper('c') == 1)
 {
 	return (1);
 }
