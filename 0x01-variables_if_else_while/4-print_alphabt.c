@@ -14,6 +14,7 @@ for (c = 'a'; c <= 'z'; c++)
 		continue;
 	}
 	putchar(c);
+	putchar('\n');
 }
 return (0);
 }
