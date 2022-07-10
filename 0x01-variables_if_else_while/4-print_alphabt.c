@@ -13,6 +13,7 @@ for (c = 'a'; c <= 'z'; c++)
 	{
 		continue;
 	}
+	putchar(c);
 }
 return (0);
 }
