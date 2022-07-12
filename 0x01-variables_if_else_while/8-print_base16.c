@@ -6,8 +6,12 @@
 
 int main(void)
 {
+int i;
 char c;
-for (c = 0; c <= 'f'; c++)
+for (i = 0; i <= 9; i++)
+{
+putchar("%d", i);
+for (c = 'a'; c <= 'f'; c++)
 {
 	putchar(c);
 }
