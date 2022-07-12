@@ -12,6 +12,6 @@ int i, n;
 n = strlen(s);
 for (i = n; i > 0; i--)
 {
-_putchar(s[i]);
+putchar(s[i]);
 }
-
+}
