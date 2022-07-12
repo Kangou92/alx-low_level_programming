@@ -11,6 +11,10 @@ void puts_half(char *str)
 {
 int i, n, j;
 j = strlen(str);
+if (j == 0)
+{
+putchar('\0');
+}
 if (j % 2 == 0)
 n = j / 2;
 else
