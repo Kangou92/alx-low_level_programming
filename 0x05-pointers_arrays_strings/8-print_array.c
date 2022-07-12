@@ -13,7 +13,7 @@ void print_array(int *a, int n)
 int i;
 if (n <= 0)
 {
-printf('\0');
+putchar('\0');
 }
 if (n == 1)
 {
