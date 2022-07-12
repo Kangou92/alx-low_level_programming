@@ -13,7 +13,7 @@ int i, n, j;
 j = strlen(str);
 if (j % 2 == 0)
 {
-	for (i = j / 2; i > 0; i--)
+	for (i = j / 2; i <= j; i++)
 	{
 		putchar(str[i]);
 	}
@@ -21,7 +21,7 @@ if (j % 2 == 0)
 else
 {
 n = (j - 1) / 2;
-for (i = n; i >= 0; i--)
+for (i = n; i <= j; i++)
 {
 	putchar(str[i]);
 }
