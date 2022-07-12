@@ -11,9 +11,13 @@
 void print_array(int *a, int n)
 {
 int i;
-if (n == 0)
+if (n <= 0)
 {
-printf("\n ");
+printf("impossible, must be greater than 0 %d\n", n);
+}
+if (n == 1)
+{
+printf("{%d}; ", a[1]);
 }
 for (i = 0; i < n; i++)
 {
