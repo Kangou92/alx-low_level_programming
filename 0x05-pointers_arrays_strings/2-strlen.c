@@ -4,11 +4,12 @@
 /**
  * _strlen - give the lenght of a char
  * @s:parameter which is a char type
- *Return:always 0
+ *Return:the lengh of the string
 */
 
 int _strlen(char *s)
 {
-strlen(s);
-return (0);
+int i;
+i = strlen(s);
+return (i);
 }
