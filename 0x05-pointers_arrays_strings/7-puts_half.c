@@ -17,6 +17,7 @@ if (j % 2 == 0)
 	{
 		putchar(str[i]);
 	}
+putchar('\n');
 }
 else
 {
@@ -25,6 +26,6 @@ for (i = n; i <= j; i++)
 {
 	putchar(str[i]);
 }
-}
 putchar('\n');
+}
 }
