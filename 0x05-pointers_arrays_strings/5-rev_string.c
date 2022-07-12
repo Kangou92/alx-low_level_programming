@@ -19,6 +19,7 @@ for (n = 0; n < i; n++)
 {
 tmp = s[n];
 s[n] = s[j];
+s[j] = tmp;
 j -= 1;
 }
 }
