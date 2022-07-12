@@ -26,4 +26,5 @@ for (i = n; i <= j; i++)
 	putchar(str[i]);
 }
 }
+putchar('\n');
 }
