@@ -17,5 +17,4 @@ else
 n = j / 2 + 1;
 for (i = n; i <= j; i++)
 putchar(str[i]);
-putchar('\n');
 }
