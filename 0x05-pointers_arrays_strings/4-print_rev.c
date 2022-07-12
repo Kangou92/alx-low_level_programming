@@ -14,4 +14,5 @@ for (i = n-1; i >= 0; i--)
 {
 putchar(s[i]);
 }
+putchar('\n');
 }
