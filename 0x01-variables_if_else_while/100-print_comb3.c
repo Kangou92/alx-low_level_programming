@@ -10,11 +10,15 @@ int main(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		putchar(i);
-		for (j = 48; j != i; j++)
+		for (j = 49; j <= 57;  j++)
 		{
-			putchar(44);
-			putchar(32);
+			putchar(i);
+			putchar(j);
+			if (i != 56 || i != 57)
+			{
+				putchar(44);
+				putchar(32);
+			}
 		}
 	}
 	putchar(10);
