@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	int i, j, c;
+	int i, j;
 
 	for (i = 48; i <= 57; i++)
 	{
@@ -15,11 +15,7 @@ int main(void)
 		{
 			if (i != j)
 			{
-				while (c != j)
-				{
 				putchar(j);
-				c += 1;
-				}
 				putchar(44);
 				putchar(32);
 			}
