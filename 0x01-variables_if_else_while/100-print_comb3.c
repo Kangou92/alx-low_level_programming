@@ -14,13 +14,13 @@ int main(void)
 		{
 			if (j > i)
 			{
-			putchar(i);
-			putchar(j);
-			}
-			if (i != 56 || i != 57)
-			{
-				putchar(44);
-				putchar(32);
+				putchar(i);
+				putchar(j);
+				if (i != 56 || i != 57)
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}
