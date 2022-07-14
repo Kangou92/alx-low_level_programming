@@ -21,4 +21,5 @@ for (i = l1 + 1; i <= l1 + l2; i++)
 }
 k = l1 + l2 + 1;
 dest[k] = '\0';
+return (dest);
 }
