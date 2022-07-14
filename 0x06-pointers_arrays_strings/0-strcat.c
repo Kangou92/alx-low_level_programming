@@ -17,6 +17,7 @@ l1 = strlen(dest);
 l2 = strlen(src);
 m = l1 + 1;
 n = l1+ l2;
+j = 0;
 for (i = m; i <= n; i++)
 {
 	dest[i] = src[j];
