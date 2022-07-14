@@ -16,9 +16,9 @@ int main(void)
 			if (i <= j)
 			{
 				putchar(i);
-				putchar(i);
 				putchar(48);
 				putchar(j);
+				putchar(j + 1);
 				putchar(32);
 				putchar(44);
 			}
