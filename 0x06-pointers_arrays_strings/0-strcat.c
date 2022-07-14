@@ -12,12 +12,12 @@
 
 char *_strcat(char *dest, char *src)
 {
-int i, j, l1, m, n, l2, k;
+int i, l1, m, n, l2, k;
+int j = 0;
 l1 = strlen(dest);
 l2 = strlen(src);
 m = l1 + 1;
 n = l1+ l2;
-j = 0;
 for (i = m; i <= n; i++)
 {
 	dest[i] = src[j];
