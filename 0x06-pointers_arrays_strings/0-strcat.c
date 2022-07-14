@@ -18,11 +18,11 @@ n = strlen(dest);
 m = strlen(src);
 for (i = 0; i <= n i++)
 {
-	while (i <= n + m) 
+	if (i <= n + m) 
 	dest[i] = src[j];
 	j += 1;
 }
-k = l1 + l2 + 1;
+k = n + m + 1;
 dest[k] = '\0';
 return (dest);
 }
