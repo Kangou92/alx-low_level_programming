@@ -13,7 +13,7 @@ int main(void)
 	{
 		for (j = 0; j <= 57; j++)
 		{
-			while (i <= j)
+			if (i <= j)
 			{
 				putchar(i);
 				putchar(i);
