@@ -12,12 +12,12 @@ char *cap_string(char *ch)
 
 	while (ch[a])
 	{
-		if (ch[a] >= 9 || ch[a] <= 64)
+		if (ch[a] >= 9 && ch[a] <= 64)
 		{
 			ch[a] = ch[a] - 32;
 			a++;
 		}
-		else if (ch[a] <= 91 || ch[a] <= 125)
+		else if (ch[a] <= 91 && ch[a] <= 125)
 		{
 			ch[a] = ch[a] - 32;
 			a++;
