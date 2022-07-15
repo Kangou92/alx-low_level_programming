@@ -1,4 +1,4 @@
-#include<main.h>
+#include"main.h"
 #include<ctype.h>
 #include<string.h>
 #include<stdio.h>
@@ -11,7 +11,6 @@
 
 char *string_toupper(char *)
 {
-	unsigned char c;
-	toupper(c);
+	char c;
+	toupper('c');
 }
-
