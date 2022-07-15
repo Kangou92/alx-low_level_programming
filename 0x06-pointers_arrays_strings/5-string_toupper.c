@@ -1,7 +1,7 @@
 #include"main.h"
 /**
  * string_toupper - convert uppercase in lower
- * @c: to be converted
+ * @ch: to be converted
  *Return: char
 */
 
@@ -11,12 +11,15 @@ char *string_toupper(char *ch)
 
 		while (ch[i])
 		{
-			if ((ch[i] >= 97) && (ch[i] <= 122))
+			if (ch[i] >= 97)
 			{
+				if (ch[i] <= 122)
+				{
 				ch[i] = ch[i] - 32;
 				i++;
+				}
 			}
 		}
-	return (x);
+	return (ch);
 
 }
