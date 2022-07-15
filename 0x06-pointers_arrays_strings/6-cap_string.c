@@ -1,5 +1,6 @@
 #include"main.h"
 #include<string.h>
+#include<stdio.h>
 /**
  * cap_string - capitalize all the word of a string
  * @ch: string
@@ -23,6 +24,6 @@ char *cap_string(char *ch)
 			a++;
 		}
 	}
-return (ch);
+	return (ch);
 }
 
