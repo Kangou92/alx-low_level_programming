@@ -5,15 +5,15 @@
  *Return: char
 */
 
-char *string_toupper(char *c)
+char *string_toupper(char *ch)
 {
 	int i = 0;
 
-		while (c[i])
+		while (ch[i])
 		{
-			if ((c[i] >= 97) && (c[i] <= 122))
+			if ((ch[i] >= 97) && (ch[i] <= 122))
 			{
-				c[i] = c[i] - 32;
+				ch[i] = ch[i] - 32;
 				i++;
 			}
 		}
