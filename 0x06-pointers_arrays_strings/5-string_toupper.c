@@ -10,10 +10,8 @@
 
 char *string_toupper(char *c)
 {
-	int i, j;
+	int i = 0;
 
-	i = strlen(c);
-	for (j = 0; j >= i; j++)
 		while c[i] != '\0'
 		{
 			if (c[i] >= 97 && c[i] <= 122)
