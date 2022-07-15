@@ -12,7 +12,7 @@ char *string_toupper(char *ch)
 	int n;	
 
 	n = strlen(ch);	
-	for (i = 0; i <= n; i++)
+	for (i = 0; i < n; i++)
 		{
 		if (ch[i] >= 97 && ch[i] <= 122)
 			{
