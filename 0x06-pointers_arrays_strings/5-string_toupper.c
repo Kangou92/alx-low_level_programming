@@ -10,15 +10,15 @@
 char *string_toupper(char *ch)
 {
 	int i;
-	int n = 0;	
+	int n = 0;
 
-	n = strlen(ch);	
+	n = strlen(ch);
 	for (i = 0; i < n; i++)
 		{
 		if (ch[i] >= 97 && ch[i] <= 122)
-			{
-				ch[i] = ch[i] - 32;
-			}
+		{
+			ch[i] = ch[i] - 32;
 		}
-	return (ch);
+		}
+	return (*ch);
 }
