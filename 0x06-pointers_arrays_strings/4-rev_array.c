@@ -9,10 +9,11 @@
 void reverse_array(int *a, int n)
 {
 	int i;
+	int *b;
 
 	for (i = 0; i < n; i++)
 	{
-		a[i] = a[n];
+		b[i] = a[n];
 		n -= 1;
 	}
 	for (i = 0; i < n; i++)
@@ -21,7 +22,7 @@ void reverse_array(int *a, int n)
 		{
 			printf(", ");
 		}
-		printf("%d", a[i]);
+		printf("%d", b[i]);
 	}
 	printf("\n");
 }
