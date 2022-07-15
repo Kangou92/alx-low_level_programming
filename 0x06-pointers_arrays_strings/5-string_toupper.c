@@ -1,4 +1,5 @@
 #include"main.h"
+#include<string.h>
 /**
  * string_toupper - convert uppercase in lower
  * @ch: to be converted
