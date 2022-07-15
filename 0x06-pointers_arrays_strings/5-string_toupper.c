@@ -14,11 +14,11 @@ char *string_toupper(char *ch)
 
 	n = strlen(ch);
 	for (i = 0; i < n; i++)
-		{
+	{
 		if (ch[i] >= 97 && ch[i] <= 122)
 		{
 			ch[i] = ch[i] - 32;
 		}
-		}
-	return (*ch);
+	}
+	return (ch);
 }
