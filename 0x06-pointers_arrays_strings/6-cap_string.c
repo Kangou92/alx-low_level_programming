@@ -20,7 +20,7 @@ char *cap_string(char *ch)
 		while (i < len)
 		{
 			if ((a == 0 || ch[a - 1] == tmp[i]) && (ch[a] >= 97 &&
-ch[a] >= 122)
+ch[a] <= 122)
 				ch[a] = ch[a] - 32;
 				i++;
 		}
