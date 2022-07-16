@@ -5,9 +5,10 @@
 */
 int main(void)
 {
-int i;
-printf("infinite loop incomming :(\n");
-i = 0;
+	int i;
+
+	printf("infinite loop incomming :(\n");
+	i = 0;
 
 	while (i < 10)
 	{
