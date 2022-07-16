@@ -35,9 +35,5 @@ else if (b > c && c >= a)
 {
 	largest = b;
 }
-else
-{
-	largest = a;
-}
 return (largest);
 }
