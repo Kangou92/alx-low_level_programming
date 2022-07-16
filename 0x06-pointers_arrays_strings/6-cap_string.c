@@ -8,7 +8,7 @@
 
 char *cap_string(char *ch)
 {
-	char tmp[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(',
+	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(',
 ')', '{', '}'};
 	int len = 13;
 	int a = 0, i;
@@ -18,7 +18,7 @@ char *cap_string(char *ch)
 		i = 0;
 		while (i < len)
 		{
-			if ((a == 0 || ch[a - 1] == tmp[i]) && (ch[a] >= 97 &&
+			if ((a == 0 || ch[a - 1] == spc[i]) && (ch[a] >= 97 &&
 ch[a] <= 122)
 				ch[a] = ch[a] - 32;
 				i++;
