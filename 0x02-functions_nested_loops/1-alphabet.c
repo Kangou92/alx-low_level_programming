@@ -4,12 +4,12 @@
  * print_alphabet - print alphabet in lowercase
 */
 
-void print_alphabet(void);
+void print_alphabet(void)
 
 {
 	char a;
 
-	for (a = '97'; a <= '122'; a++)
+	for (a = 'a'; a <= 'z'; a++)
 	{
 		putchar(a);
 		putchar('\n');
