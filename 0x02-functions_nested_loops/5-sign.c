@@ -12,13 +12,15 @@ int print_sign(int n)
 
 	if (n > 0)
 	{
-		i = 1;
+		i = +1;
 	}
 	else if (n == 0)
 	{
 		i = 0;
 	}
-	else
+	else if (n < 0)
+	{
 		i = -1;
+	}
 	return (i);
 }
