@@ -12,18 +12,6 @@ char *_strchr(char *s, char c)
 {
 	char *ch;
 
-	while (s[a])
-	{
-		a++;
-		for (i = 0; i < a; i++)
-		{
-		if (s[a] == c)
-		{
-			ch = s[a];
-		}
-		else
-		ch = NULL;
-		}
-	}	
+	ch = strchr(s, c);
 return (ch);
 }
