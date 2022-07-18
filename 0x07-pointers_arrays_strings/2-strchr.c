@@ -10,20 +10,8 @@
 
 char *_strchr(char *s, char c)
 {
-	int i, j = 0;
 	char *ch;
 
-	while (s[j])
-		j++
-	for (i = 0; i < j; i++)
-	{
-	if (s[i] == c)
-	{
-		s[i] = c;
-		ch = s[i];
-	}
-	else
-		ch = NULL;
-	}
+	ch = strchr(*s, c);	
 return (ch);
 }
