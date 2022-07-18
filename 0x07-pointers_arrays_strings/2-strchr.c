@@ -19,7 +19,7 @@ char *_strchr(char *s, char c)
 		{
 		if (s[a] == c)
 		{
-			ch = &s[a];
+			ch = s[a];
 		}
 		else
 		ch = NULL;
