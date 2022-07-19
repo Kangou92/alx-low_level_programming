@@ -15,19 +15,16 @@ unsigned int _strspn(char *s, char *accept)
 
 	while (*s)
 	{
-		while (*accept++)
+		for (j = 0; accept[j]; j++)
 		{
-		if (*(s - 1) == *(accept - 1))
+		if (*s == accept[j])
 		{
 			i++;
 			break;
 		}
-		if (!(*--accept))
-			break;
-		accept = ch;
+		else if (accept[j + 1] == '\n')
+		return (i);
 		}
 	}
-	a++;
-	j = i * sizeof(accept);
-	return (j);
+return (i);
 }
