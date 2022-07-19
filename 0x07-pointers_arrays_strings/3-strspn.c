@@ -2,38 +2,30 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * _strspn - gets the length of a given substring
+ * _strspn - print the length of a substring
  * @s: string
- * @accept:string
- * Return: unsigned int
+ * @accept: substring
+ * Return: unsined int
 */
 
 unsigned int _strspn(char *s, char *accept)
-
 {
-	unsigned int len, i, k, m, j,  l, a = 0;
-	char *ch;
+	char *ch = accept;
+	unsigned int i = 0;
 
-	k = strlen(s);
-	l = strlen(accept);
-	while (s[a])
+	while (*s++)
 	{
-		for (i = 0; i < k; i++)
+		while (*accept++)
 		{
-		for  (j = 0; j < l; j++)
+		if (*(s - 1) == *(accept - 1))
 		{
-			if (s[i] == accept[j])
-			{
-				ch = accept[j];
-				break;
-			}
-			else
-				break;
+			i++;
+			break;
 		}
-		a++;
+		if (!(*--accept))
+			break;
+		accept = ch;
 		}
 	}
-	m = strlen(ch);
-	len = j * sizeof(ch);
-	return (len);
+	return (ch);
 }
