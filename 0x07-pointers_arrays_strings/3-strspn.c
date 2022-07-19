@@ -11,10 +11,11 @@
 unsigned int _strspn(char *s, char *accept)
 
 {
-	unsigned int len;
+	unsigned int len, j;
 	char ch;
 
 	ch = strspn(s, accept);
+	j = strlen(ch);
 	len = sizeof(ch);
 	return (len);
 }
