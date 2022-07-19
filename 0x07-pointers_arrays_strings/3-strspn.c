@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 
 {
 	unsigned int len, j;
-	char ch;
+	char *ch;
 
 	ch = strspn(s, accept);
 	j = strlen(ch);
