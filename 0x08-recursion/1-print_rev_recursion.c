@@ -9,8 +9,6 @@
 
 void _print_rev_recursion(char *s)
 {
-	unsigned int j;
-	char *ch = s;
 	if (*s != '\0')
 	{
 		_print_rev_recursion(s + 1);
