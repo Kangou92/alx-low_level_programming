@@ -9,6 +9,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	int i, j;
+	char *ch;
 
 	for (i = 0; *(needle + i) != '\0'; i++)
 	{
@@ -16,13 +17,14 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (*(needle + i) == *(haystack + j))
 			}
+			ch = needle + j;
 				return (needle + j);
 			}
-		}
 			else
 			{
 				break;
 			}
+		}
 	}
 	return ('\0');
 }
