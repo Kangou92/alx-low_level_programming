@@ -8,12 +8,12 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, bool;
+	int i, bool;
 
 	bool = 1;
 	for (i = 0; *(haystack + i) != '\0'; i++)
 	{
-		if (*(haystack + i) == *neddle)
+		if (*(haystack + i) == *needle)
 		{
 			bool = 1;
 			break;
