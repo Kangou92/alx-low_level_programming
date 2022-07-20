@@ -10,7 +10,7 @@
 void _print_rev_recursion(char *s)
 {
 	int i = 0, j;
-	char *ch;
+	char *ch = *s;
 
 	while (*(s + i))
 	{
