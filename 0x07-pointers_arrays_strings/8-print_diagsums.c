@@ -17,7 +17,7 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				diag_sum1 = diag_sum1 + *(a + i + j);
+				diag_sum1 = diag_sum1 + *(a + );
 			}
 		}
 	}
@@ -27,7 +27,7 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				diag_sum2 = diag_sum2 + *(a + i + j);
+				diag_sum2 = diag_sum2 + *(a  j);
 			}
 		}
 	}
