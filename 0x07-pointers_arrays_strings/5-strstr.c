@@ -8,19 +8,17 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, bool;
+	int i;
 
-	bool = 1;
 	for (i = 0; *(haystack + i) != '\0'; i++)
 	{
 		if (*(haystack + i) == *needle)
 		{
-			bool = 1;
 			break;
 			return (needle);
 		}
 		else
-			bool = 0;
+		break;
 	}
 	return ('\0');
 }
