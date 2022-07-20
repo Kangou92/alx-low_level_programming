@@ -31,5 +31,6 @@ void print_diagsums(int *a, int size)
 			}
 		}
 	}
-	printf("%d%d\n", diag_sum1, diag_sum2);
+	printf("%d\n", diag_sum1);
+	printf ("%d\n", diag_sum2);
 }
