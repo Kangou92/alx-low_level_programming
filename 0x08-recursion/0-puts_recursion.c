@@ -18,5 +18,5 @@ void _puts_recursion(char *s)
 		i += 1;
 	}
 	else
-		puts(32);
+		puts("");
 }
