@@ -13,8 +13,8 @@ void print_diagsums(int *a, int size)
 
 	for (i = 0; i < size; i++)
 	{
-	diag_sum1 = diag_sum + *(a + (size * i + i));
-	diag_sum2 = diag_ sum2 += *(a + (size * i + size - 1 - i));	
+	diag_sum1 += *(a + (size * i + i));
+	diag_sum2 += *(a + (size * i + size - 1 - i));	
 	}
 	printf("%d, %d\n", diag_sum1, diag_sum2);
 }
