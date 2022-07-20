@@ -12,8 +12,8 @@ void _print_rev_recursion(char *s)
 	unsigned int j;
 	char *ch = s;
 
-	j = stlen(*s);
-	*ch = (s + j);
+	j = strlen(*s);
+	*ch = *(s + j);
 	j--;
 	puts(ch);
 }
