@@ -11,9 +11,9 @@ void _puts_recursion(char *s)
 {
 	int i = 0;
 
-	if (*(s + i) != NULL)
+	if (*(s + i)) != '\0')
 	{
-		printf(*(s + i);
+		puts(*(s + i));
 		i += 1;
 	}
 	else
