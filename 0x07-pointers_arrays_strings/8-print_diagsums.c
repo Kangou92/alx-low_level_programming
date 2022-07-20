@@ -9,7 +9,7 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, j, diag_sum = 0;
+	int i, j, diag_sum1 = 0, diag_sum2 = 0;
 
 	for (i = 0; i < size; i++)
 	{
@@ -17,9 +17,19 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				diag_sum = diag_sum + *(a + i) + *(a + j);
+				diag_sum1 = diag_sum2 + *(a + i);
 			}
 		}
 	}
-	printf("%d\n", diag_sum);
+	for (i = size - 1; i >= 0; i--)
+	{
+		for (j = size - 1; j >= 0; j--)
+		{
+			if (*(a + i) == *(a + j))
+			{
+				diag_sum2 = *(a + i);
+			}
+		}
+	}
+	printf("%d%d\n", diag_sum1, diag_sum2);
 }
