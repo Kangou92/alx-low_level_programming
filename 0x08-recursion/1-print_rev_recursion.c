@@ -9,17 +9,11 @@
 
 void _print_rev_recursion(char *s)
 {
-	int i = 0, j;
+	unsigned int j;
 	char *ch = s;
 
-	while (*(s + i))
-	{
-		i += 1;
-	}
-	for (j = 0; j < i; j++)
-	{
-		*(ch + j) = *(s + i);
-			i--;
-	}
+	j = stlen(*s);
+	*ch = (s + j);
+	j--;
 	puts(ch);
 }
