@@ -12,16 +12,14 @@ void _print_rev_recursion(char *s)
 	int i = 0, j;
 	char *ch;
 
-	while (*s)
+	while (*(s + i))
 	{
 		i += 1;
-		*s++;
 	}
 	for (j = 0; j < i; j++)
 	{
-		*(ch + j) = *(s + i)
+		*(ch + j) = *(s + i);
 			i--;
 	}
 	puts(ch);
-	puts('\n');
 }
