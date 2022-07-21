@@ -1,27 +1,34 @@
 #include "main.h"
-
 /**
- * _sqrt_recursion - return the natural square root of a given number
- * @n: integer
- * Return: integer
+ * sqrt_a - main - check the code
+ * @a: number
+ * @b: number of power
+ * Return: Always 0.
 */
 
-int _sqrt_recursion(int n)
+
+int sqrt_a(int a, int b)
 {
-	if (! _sqrt_recursion())
+	if (b * b == a)
+	{
+		return (b);
+	}
+	else if (b * b > a)
 	{
 		return (-1);
 	}
-	else if (n == 0)
-	{
-		return (0);
-	}
-	else if (n == 1)
-	{
-		return (1);
-	}
-	else
-	{
-		return (1 + _sqrt_recursion(n - 1));
-	}
+	return (sqrt_a(a, b + 1));
+}
+
+/**
+ * _sqrt_recursion - check on main
+ * @n: integer
+ *
+ * Return: integer
+*/
+
+
+int _sqrt_recursion(int n)
+{
+	return (sqrt_a(n, 0));
 }
