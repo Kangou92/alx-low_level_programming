@@ -1,7 +1,7 @@
 #include "main.h"
 #include<stdio.h>
 /**
- * main - entry point
+ *_isupper - check if a character is upper or not
  * Return: always 0
  * @c: integer
 */
