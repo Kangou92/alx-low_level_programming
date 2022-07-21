@@ -31,12 +31,14 @@ int check(char *s, int l)
 	{
 		return (1);
 	}
-	if (*s == *(s + (l - 1))
+	if (*s == *(s + (l - 1)))
 	{
 		return (check(s + 1, (l - 2)));
 	}
 	else
+	{
 	return (0);
+	}
 }
 
 
