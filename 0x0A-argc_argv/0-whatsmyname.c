@@ -3,11 +3,12 @@
 /**
  * myname_is - print its own name
  * @a:integer
- * Return: void
+ * Return:0
 */
 
-void myname_is(int a)
+int main(int argc, char *argv[])
 {
 	a = 0;
 	printf("%s\n", argv[a]);
+	return (0);
 }
