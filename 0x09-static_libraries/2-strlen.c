@@ -1,15 +1,15 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include "main.h"
 /**
- * _strlen - give the lenght of a char
- * @s:parameter which is a char type
+ * _strlen - give the lenght of a string
+ * @s: string
  *Return:the lengh of the string
 */
 
 int _strlen(char *s)
 {
 int i;
-i = strlen(s);
+
+	while (*s++)
+		i++;
 return (i);
 }
