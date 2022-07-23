@@ -1,7 +1,9 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * myname_is - print its own name
+ * main - print its own name
  * @argc:integer
  * @argv: array of string
  * Return:0
