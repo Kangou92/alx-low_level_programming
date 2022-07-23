@@ -1,14 +1,13 @@
-#include <stdio.h>
-#include<stdlib.h>
+#include "main.h"
 
 /**
- * main - print its own name
- * @argc: integer
- * @argv: array of string
+ * myname_is - print its own name
+ * @a:integer
  * Return: void
 */
 
-void main(int argc, char *argv[])
+void myname_is(int a)
 {
-	printf("%s\n", argv[0]);
+	a = 0;
+	printf("%s\n", argv[a]);
 }
