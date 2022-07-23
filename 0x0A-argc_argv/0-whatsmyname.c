@@ -2,13 +2,14 @@
 
 /**
  * myname_is - print its own name
- * @a:integer
+ * @argc:integer
+ * @argv: array of string
  * Return:0
 */
 
 int main(int argc, char *argv[])
 {
-	a = 0;
+	int a = argc - argc;
 	printf("%s\n", argv[a]);
 	return (0);
 }
