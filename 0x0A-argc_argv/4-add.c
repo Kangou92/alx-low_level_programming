@@ -12,17 +12,9 @@ int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int i, j;
-	i = 1;
-
-	if (argc == 1)
-
+	i = 1;	
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-		return (0);
-	}
-	while (i < argc)
-	{
-
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (!(isdigit(argv[i][j])))
