@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		for (k = 0; k < argc; k++)
+		for (k = 0; argv[i][k] != '\0'; k++)
 		{
 		if (argv[i][k] > '9' || argv[i][k] < '0')
 		{
@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
 	{
 		j = atoi(argv[l]);
 		sum += j;
+	}
 	printf("%d\n", sum);
 	return (0);
 }
