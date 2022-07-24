@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, k, l = 0;
+	int i, j, l = 0;
 	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
@@ -30,9 +30,10 @@ int main(int argc, char *argv[])
 	{
 		while (j >= coins[i])
 		{
-			k = j / coins[i];
-			l += k;
-			printf("%d\n", l);
+			j -= coins[i];
+			l++;
 		}
 	}
+	printf("%d\n", l);
+	return (0);
 }
