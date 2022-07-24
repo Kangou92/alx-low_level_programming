@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
 	if (argc == 0)
 	{
 		printf("0\n");
+		return (0);
 	}
 	for (i = 1; i < argc; i++)
 	{
@@ -25,7 +26,7 @@ int main(int argc, char *argv[])
 		{
 		if (!(isdigit(argv[i][k])))
 		{
-			printf("Error\n");
+			printf("%s\n" "Error");
 			return (1);
 		}
 		j = atoi(argv[i][k]);
