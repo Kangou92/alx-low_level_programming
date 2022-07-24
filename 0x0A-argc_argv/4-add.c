@@ -17,14 +17,14 @@ int main(int argc, char *argv[])
 
 	if (argc == 0)
 	{
-		printf("0\n");
+		printf("%d\n", 0);
 		return (0);
 	}
 	for (i = 1; i < argc; i++)
 	{
 		for (k= 0; k < argc; k++)
 		{
-		if (!(isdigit(argv[i][k])))
+		if (argv[i][k] > '9' || argv[i][k] < '0')
 		{
 			printf("%s\n" "Error");
 			return (1);
