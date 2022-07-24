@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	j = atoi(argv[1]);
 	if (argv[1] < 0)
 	{
 		printf("0\n");
@@ -27,7 +28,6 @@ int main(int argc, char *argv[])
 	}
 	for (i = 0; i < 5; i++)
 	{
-		j = atoi(argv[1]);
 		if (j % coins[i] == 0)
 		{
 			k = j / i;
