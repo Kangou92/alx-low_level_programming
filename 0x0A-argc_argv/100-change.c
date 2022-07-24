@@ -21,16 +21,16 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	j = atoi(argv[1]);
-	if (argv[1] < 0)
+	if (j < 0)
 	{
 		printf("0\n");
 		return (1);
 	}
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < 5 && j >= 0; i++)
 	{
-		if (j % coins[i] == 0)
+		while (j >= coins[i])
 		{
-			k = j / i;
+			k = j / coins[i];
 			l += k;
 			printf("%d\n", l);
 		}
