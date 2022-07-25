@@ -17,6 +17,6 @@ int print_last_digit(int n)
 	{
 		lastdig = -lastdig;
 	}
-	_putchar(lastdig + '0');
+	_putchar(lastdig + atoi(lasdig));
 	return (n);
 }
