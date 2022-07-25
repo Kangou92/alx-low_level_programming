@@ -13,5 +13,10 @@ int print_last_digit(int n)
 	int lastdig;
 
 	lastdig = n % 10;
-	return (lastdig);
+	if (n < 0)
+	{
+		lastdig = -lastdig;
+	}
+	_puchar(lastdig + '0');
+	return (0);
 }
