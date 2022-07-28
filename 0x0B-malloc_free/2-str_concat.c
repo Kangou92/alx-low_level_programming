@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[j])
 		j++;
 	l = i + j;
-	ch = (char *)malloc((l * sizeof(char) + 1));
+	ch = (char *)malloc(l * sizeof(char) + 1);
 	j = 0;
 	while (k < l)
 	{
