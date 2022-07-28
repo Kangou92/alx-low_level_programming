@@ -6,7 +6,7 @@
  * a newly allocated memory
  *
  * @str: pointer to a string
- * Returns: a pointer
+ * Return: a pointer
 */
 
 char *_strdup(char *str)
@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	char *nstr;
 	 int i = 0, j = 0;
 
-	if (!*str)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
