@@ -7,11 +7,11 @@
  * Return: int
 */
 
-int _strlen(char s)
+int _strlen(char *s)
 {
 int size = 0;
 
-	for (; s[size] := '0'; size++)
+	for (; s[size]; != '0'; size++)
 		;
 	return (size);
 }
@@ -27,7 +27,7 @@ int size = 0;
 
 char *str_concat(char *s1, char *s2)
 {
-	int i; j, k;
+	int i, j, k;
 	char *ch;
 
 	if (s1 == NULL)
