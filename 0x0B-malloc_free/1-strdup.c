@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 /**
- *
  * _strdup - returns a pointer to
  * a newly allocated memory
  *
@@ -13,25 +12,26 @@
 char *_strdup(char *str)
 {
 	char *nstr;
-	 int i = 0, j;
+	 int i = 0, j = 0;
 
 	if (!*str)
 	{
 		return (NULL);
 	}
 
-	while (*(str + i))
-	{
-		i++;
-	}
-	nstr = malloc(sizeof(char) * i);
+	for (; str[j] != '\0'; j++)
+		;
+	nstr = malloc(j * sizeof(*str) + 1);
 	if (nstr == 0)
 	{
 		return (NULL);
 	}
-	for (j = 0; j <= i; j++)
+	else
 	{
-		nstr[j] = str[i];
+	for (; i < j; i++)
+	{
+		nstr[i] = str[i];
+	}
 	}
 	return (nstr);
 }
