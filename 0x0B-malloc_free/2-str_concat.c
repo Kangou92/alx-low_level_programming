@@ -27,25 +27,31 @@ int size = 0;
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, k;
+	int i = 0, j = 0, k = 0, l = 0;
 	char *ch;
 
 	if (s1 == NULL)
-		s1 = '0';
+		s1 = "";
 	if (s2 == NULL)
-		s2 = '<9f>0';
-	i = _strlen(s1);
-	j = _strlen(s2);
-	ch = malloc((i + j) * sizeof(char) + 1);
-	if (ch == 0)
-		return (0);
-	for (k = 0; k <= i + j; k++)
+		s2 = "";
+	while (s1[i])
+		i++;
+	while (s2[j])
+		j++;
+	k = i + j;
+	ch = (char *)malloc((l * sizeof(char) + 1);
+	j = 0;
+	while (k < l)
 	{
-		if (k < i)
-			m[k] = s1[k];
-		else
-			m[k] = s2[k - i];
+		if (k <= i)
+		ch[k] = s1[k];
+		if (k > i)
+		{
+			s[k] = s2[j];
+			j++
+		}
+		k++;
 	}
-	m[i] = '0';
-	return (m);
+	s[k] = '0';
+		return (ch);
 }
