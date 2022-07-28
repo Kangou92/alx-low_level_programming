@@ -30,11 +30,11 @@ char *str_concat(char *s1, char *s2)
 		ch[k] = s1[k];
 		if (k > i)
 		{
-			s[k] = s2[j];
+			ch[k] = s2[j];
 			j++;
 		}
 		k++;
 	}
-	s[k] = NULL;
+	ch[k] = NULL;
 		return (ch);
 }
