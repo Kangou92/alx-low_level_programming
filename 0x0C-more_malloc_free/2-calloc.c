@@ -1,0 +1,24 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * _calloc -allocates memory for an array
+ *
+ * @nmemb: firs param
+ * @size: second param
+ * Return: pointer
+*/
+
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	void *ptr;
+
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+	ptr = malloc(size * nmemb + 1);
+	if (ptr == 0)
+	{
+		return (NULL);
+	}
+	return (ptr);
+}
