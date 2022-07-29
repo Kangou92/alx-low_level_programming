@@ -12,16 +12,18 @@
 
 int *array_range(int min, int max)
 {
-	int *array, *tmp;
-	int i, l;
+	int array[], tmp[];
+	unsigned int l;
+	int i;
+	int *ptr
 
-	tmp = array;
 	if (min > max)
 	{
 		return (NULL);
 	}
 	l = max - min;
-	array = malloc((l + 1) * sizeof(int));
+	tmp[] = array[];
+	ptr = malloc((l + 1) * sizeof(int));
 	if (array == NULL)
 	{
 		return (NULL);
@@ -37,6 +39,6 @@ int *array_range(int min, int max)
 			}
 		}
 	}
-	array = tmp;
-	return (array);
+
+	return (ptr);
 }
