@@ -8,18 +8,7 @@
  * @old_size: unsigned int
  * @new_size: unsigned int
  * Return: pointer
-=======
-#include <stdlib.h>
-
-
-/**
- * _realloc - reallocates a bloc of memory
- * @*ptr: void
- * @old_size: integer
- * @new_size: integer
->>>>>>> 38376b4cf155d7eb1eebe647679011e3d8a82cb7
-*/
-
+ */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *memo;
