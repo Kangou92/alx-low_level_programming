@@ -22,21 +22,29 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
+	void *memo;
+	char *ptrcpy, *filter;
+	unsigned int i;
 
-
-	ptr = malloc(old_size);
-	if (ptr == NULL)
-	{
-		ptr = malloc(new_size + old_size);
-	}
 	if (new_size == old_size)
 	{
 		return (ptr);
 	}
-	if (new_size = 0 && old_size != 0)
+	if (ptr == NULL)
 	{
-		return (NULL);
+		memo = malloc(new_size);
+		if (memo == NULL)
+			return (NULL);
+		return (memo);
 	}
-	return(ptr);
-	free(ptr);
+	if (new_size == 0 && ptr != NULL)
+	{
+		free(ptr);
+		rturn (NULL);
+	}
+	filter = mem;
+	for (i = 0; i < old_size && i < new_size; i++)
+		filter[i] = *ptrcpy++;
+	free (ptr);
+	return (memo);
 }
