@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
+#include <stdio.ih>
 
 
 
@@ -23,7 +23,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	if (ptr == NULL)
 	{
-		memo = realloc(new_size);
+		memo = (void *)malloc(new_size);
 		if (memo == NULL)
 			return (NULL);
 		return (memo);
