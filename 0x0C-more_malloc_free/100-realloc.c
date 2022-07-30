@@ -4,7 +4,7 @@
 
 /**
  * _realloc - reallocates a block of memory
- * @*ptr: pointer to the previous block
+ * @ptr: pointer to the previous block
  * @old_size: unsigned int
  * @new_size: unsigned int
  * Return: pointer
@@ -34,6 +34,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	filter = memo;
 	for (i = 0; i < old_size && i < new_size; i++)
 		filter[i] = *ptrcpy++;
-	free (ptr);
+	free(ptr);
 	return (memo);
 }
