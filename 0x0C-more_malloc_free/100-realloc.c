@@ -34,6 +34,5 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	filter = memo;
 	for (i = 0; i < old_size && i < new_size; i++)
 		filter[i] = *ptrcpy++;
-	free(ptr);
 	return (memo);
 }
