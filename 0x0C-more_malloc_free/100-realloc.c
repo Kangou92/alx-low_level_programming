@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
+
 
 
 /**
@@ -21,7 +23,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	if (ptr == NULL)
 	{
-		memo = malloc(new_size);
+		memo = realloc(new_size);
 		if (memo == NULL)
 			return (NULL);
 		return (memo);
