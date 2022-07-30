@@ -13,7 +13,7 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *memo;
+	void *memo = NULL;
 	char *ptrcpy, *filter;
 	unsigned int i;
 
@@ -24,7 +24,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 	if (ptr == NULL)
 	{
-		memo = (char *)malloc(new_size);
+		memo = malloc(new_size);
 		if (memo == NULL)
 			return (NULL);
 		return (memo);
