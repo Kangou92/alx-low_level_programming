@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 
 /**
@@ -40,9 +40,9 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
-		rturn (NULL);
+		return (NULL);
 	}
-	filter = mem;
+	filter = memo;
 	for (i = 0; i < old_size && i < new_size; i++)
 		filter[i] = *ptrcpy++;
 	free (ptr);
