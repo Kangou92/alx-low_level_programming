@@ -17,13 +17,14 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	char *ptrcpy, *filter;
 	unsigned int i;
 
+
 	if (new_size == old_size)
 	{
 		return (ptr);
 	}
 	if (ptr == NULL)
 	{
-		memo = (void *)malloc(new_size);
+		memo = (char *)malloc(new_size);
 		if (memo == NULL)
 			return (NULL);
 		return (memo);
