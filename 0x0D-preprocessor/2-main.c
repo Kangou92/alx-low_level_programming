@@ -7,14 +7,15 @@
 /**
  * main - prints the name of the file
  * it was compiled from
- * argv: array
- * argc: integer
+ * @argv: array
+ * @argc: integer
  * Return: 0
 */
 #endif
 
-int main(int *argc, char *argv[])
+int main(int argc, char *argv[])
 {
+	if (argc == 0)
 	printf("%s\n", argv[SIZE]);
 	return (0);
 }
