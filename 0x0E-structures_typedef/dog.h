@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * dog - presents the declaration of the structure
+ * struct dog - presents the declaration of the structure
  * @name:string
  * @age: integer
  * @owner: string
