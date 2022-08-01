@@ -1,4 +1,8 @@
-__0-object_like_macro.h__
-#ifndef SIZE 1024
+#include <stdlib.h>_
 #define SIZE 1024
-#endif
+
+
+int main()
+{
+	return (0);
+}
