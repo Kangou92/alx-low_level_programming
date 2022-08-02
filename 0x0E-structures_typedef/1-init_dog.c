@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "dog.h"
 /**
  * init_dog - instantiation of a dog
