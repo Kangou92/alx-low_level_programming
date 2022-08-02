@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "dog.h"
 
-/*
+/**
  * free_dog - frees the memory occupied by sthe structure dog
  * @d: struct dog
  * Return: no
