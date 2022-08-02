@@ -6,7 +6,7 @@
  * @age: integer
  * @owner: string
  * @d: struct
- * Return: void
+ * Return:Nothing
 */
 
 
