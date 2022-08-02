@@ -9,7 +9,7 @@
  * @owner: string
  * @d: struct
  * Return:Nothing
-*/
+nit_dog.c*/
 
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
