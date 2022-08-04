@@ -1,8 +1,7 @@
-#include <stdio.h>
+#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdlib.h>
-#include <string.h>
-#include "variadic_functions.h"
+#include <stdio.h>
 
 
 /**
@@ -30,9 +29,9 @@ void prints_strings(const char *separator, const unsigned int n, ...)
 			{
 				printf("(nil)");
 			}
-			if (i < n - 1 && separator != NULL)
+			if (i  != (n - 1) && separator != NULL)
 					printf("%s", separator);
 		}
 		va_end(args);
-		putchar('\n');
+		printf('\n');
 }
