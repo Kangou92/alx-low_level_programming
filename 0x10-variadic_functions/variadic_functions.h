@@ -1,5 +1,5 @@
-#ifndef VARIA_FUNC_H
-#define VARIA_FUNC_H
+#ifndef _VARIA_FUNC_H_
+#define _VARIA_FUNC_H_
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
