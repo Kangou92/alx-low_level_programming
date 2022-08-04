@@ -9,18 +9,18 @@
  * @n: integer
 */
 
-void print_numbers(const char *separator, const unsigned int n, ...);
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list args;
 
-	va_start(arg, n);
+	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
-		if (*(separator + i) != NULL)
+		if (separator)
 		{
 			printf("%d", va_arg(args, int));
-			printf("%s", seaparator[i]);
+			printf("%s", separator);
 			va_end(args);
 		}
 	}
