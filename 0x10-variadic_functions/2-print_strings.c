@@ -32,6 +32,6 @@ void prints_strings(const char *separator, const unsigned int n, ...)
 				if (separator)
 					printf("%s", separator);
 		}
-		va_end(args);
 		printf("\n");
+		va_end(args);
 }
