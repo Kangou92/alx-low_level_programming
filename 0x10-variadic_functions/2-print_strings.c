@@ -15,15 +15,13 @@ void prints_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list args;
-	char *ch;
 
 	va_start(args, n);
 		for (i = 0; i < n; i++)
 		{
-			ch = va_arg(args, char *);
-			if (ch)
+			if (va_arg(args, char *))
 			{
-			printf("%s", ch);
+			printf("%s", va_arg(args, char *));
 			}
 			else
 			{
@@ -33,6 +31,6 @@ void prints_strings(const char *separator, const unsigned int n, ...)
 				if (separator)
 					printf("%s", separator);
 		}
-		printf("\n");
 		va_end(args);
+		printf("\n");
 }
