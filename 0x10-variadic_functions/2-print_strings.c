@@ -5,7 +5,7 @@
 
 
 /**
- * prints_strings - prints all the strings its get as parameter
+ * print_strings - prints all the strings its get as parameter
  *
  * @separator: string
  * @n: number of string to be print
@@ -13,16 +13,17 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-        va_list strings;
+	va_list strings;
 	unsigned int i;
 	char *str;
-	va_start(strings,n);
+
+	va_start(strings, n);
 		for (i = 0; i < n; i++)
 		{
 			str =  va_arg(strings, char *);
 			if (str == NULL)
 			{
-				printf("%p", str);
+				printf("(nil)");
 			}
 			else
 			{
