@@ -24,11 +24,11 @@ void prints_strings(const char *separator, const unsigned int n, ...)
 	if (!ch)
 		ch ="(nil)";
 	if (!separator)
-		printf("%s",chr);
+		printf("%s",, ch);
 	else if (separator && i == 0)
 		printf("%s", ch);
 	else
-		printf("%s%s",separator, ch);
+		printf("%s%s", separator, ch);
 	
 	}
 	va_end(args);
