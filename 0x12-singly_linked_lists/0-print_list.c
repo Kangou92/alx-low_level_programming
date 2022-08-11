@@ -3,14 +3,11 @@
 #include <stddef.h>
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
+ * print_list - prints the element of th linked list
+ * @h: pointer to the linked list
  *
- * Description: singly linked list node structure
+ * Return: the number of element
 */
-
 
 size_t print_list(const list_t *h)
 {
