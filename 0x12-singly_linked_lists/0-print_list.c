@@ -1,4 +1,5 @@
 #include "list.h"
+#include <stddef.h>
 
 /**
  * struct list_s - singly linked list
@@ -10,7 +11,7 @@
 */
 
 
-size_t print_list(const list_t *h);
+size_t print_list(const list_t *h)
 {
 
 	size_t i = 0;
@@ -21,7 +22,7 @@ size_t print_list(const list_t *h);
 	while (h)
 	{
 		i += 1;
-		printf(["%u"]"%s", h->len, h->str);
+		printf("[%u]%s", i, h->str);
 		h = h->next;
 	}
 	return (i);
