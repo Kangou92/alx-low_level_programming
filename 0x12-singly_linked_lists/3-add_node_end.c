@@ -1,9 +1,12 @@
 #include "lists.h"
+
+
 /**
  * add_node_end - adds a node at the end of the list
  *
  * @head: pointer to the adress of the lsit
  * @str: string
+ * Return: the list
 */
 
 
