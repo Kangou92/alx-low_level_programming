@@ -13,7 +13,7 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	unsigned int len = 0;
+	int len = 0;
 	list_t *new;
 
 	while (str[len])
