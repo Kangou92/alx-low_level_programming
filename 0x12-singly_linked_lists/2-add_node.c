@@ -1,4 +1,8 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 
 /**
  * add_node - add a node to the linked list
