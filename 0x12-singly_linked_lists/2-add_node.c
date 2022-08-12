@@ -16,10 +16,11 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	unsigned int len = 0;
+	list_t *new;
 
 	while (str[len])
 		len++;
-	list_t *new = malloc(sizeof(*new));
+	new = malloc(sizeof(list_t));
 	if (*head == NULL || new == NULL)
 	{
 		return (NULL);
