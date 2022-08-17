@@ -4,6 +4,7 @@
  * add_nodeint - adds node at the beginning
  *
  * @head: pointer to the list
+ * @n: integer
  * Return: the list
 */
 
