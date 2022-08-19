@@ -4,6 +4,7 @@
  *
  * @n: number to get its bit
  * @index: position of the bit
+ * Return: int
 */
 
 int get_bit(unsigned long int n, unsigned int index)
